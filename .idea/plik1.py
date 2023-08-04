@@ -1,3 +1,12 @@
+class Osoba:
+
+    def __init__(self,imie, nazwisko):
+        self.imie = imie
+        self.naziwsko = nazwisko
+        self.poziom_szczescia = 0
+        #self.suma_dystansow = 0
+
+
 class Biegacz:
 
     def __init__(self,imie, nazwisko):
@@ -18,8 +27,7 @@ class Biegacz:
 class Strongman:
 
     def __init__(self,imie, nazwisko):
-        self.imie = imie
-        self.naziwsko = nazwisko
+        super.__init__(imie, nazwisko)
         self.poziom_szczescia = 0
         #self.suma_dystansow = 0
 
@@ -29,3 +37,10 @@ class Strongman:
     def podnies_ciezar(self, ciezar):
         if ciezar > 100:
             self.poziom_szczescia += 1
+
+    def przedstaw_sie1(self):
+        return f'{self.imie} {self.naziwsko} Jestem skomplikowany'
+
+
+x = Strongman()
+przedstaw_sie.x
